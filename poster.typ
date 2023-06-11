@@ -14,8 +14,8 @@
   departments: "Department Name",
 
   // University logo.
-  univ_logo_1: "Logo Path",
-  univ_logo_2: "Logo Path",
+  univ_logo_1: "Logo Path", // the left site logo
+  univ_logo_2: "Logo Path", // the right site logo
 
   // header text.
   // For instance, Name of Fist Athor, Date, Location.
@@ -56,10 +56,11 @@
   keywords: (),
 
   // Number of columns in the poster.
-  num_columns: "2",
+  num_columns: "3",
 
   // University logo's scale (in %).
-  univ_logo_scale: "100",
+  univ_logo_scale_1: "100",
+  univ_logo_scale_2: "100",
 
   // University logo's column size (in in).
   univ_logo_column_size_1: "10",
@@ -95,13 +96,16 @@
   let sizes = size.split("x")
   let width = int(sizes.at(0)) * 1in
   let height = int(sizes.at(1)) * 1in
-  univ_logo_scale = int(univ_logo_scale) * 0.3%
+  univ_logo_scale_1 = int(univ_logo_scale_1) * 0.3%
+  univ_logo_scale_2 = int(univ_logo_scale_2) * 0.3%
+
   title_font_size = int(title_font_size) * 1pt
   authors_font_size = int(authors_font_size) * 1pt
   num_columns = int(num_columns)
   univ_logo_column_size_1 = int(univ_logo_column_size_1) * 1.2cm
-  univ_logo_column_size_2 = int(univ_logo_column_size_2) * 1.7cm
-  title_column_size = int(title_column_size) * 2in
+  univ_logo_column_size_2 = int(univ_logo_column_size_2) * 1.8cm
+  title_column_size = int(title_column_size) * 3.2cm
+
   header_url_font_size = int(header_url_font_size) * 1pt
   header_text_font_size = int(header_text_font_size) * 1pt
   footer_url_font_size = int(footer_url_font_size) * 1pt
@@ -213,14 +217,15 @@
   align(left,
     grid(
       rows: 2,
-      columns: (univ_logo_column_size_1, univ_logo_column_size_2, title_column_size),
+      columns: (univ_logo_column_size_1, title_column_size, univ_logo_column_size_2,),
       column-gutter: 0pt,
       row-gutter: 30pt,
-      image(univ_logo_1, width: univ_logo_scale),
-      image(univ_logo_2, width: univ_logo_scale),
+      image(univ_logo_1, width: univ_logo_scale_1),
+      //image(univ_logo_2, width: univ_logo_scale),
       text(title_font_size, title + "\n\n") + 
       text(authors_font_size, emph(authors) + 
           "   (" + departments + ") "),
+      image(univ_logo_2, width: univ_logo_scale_2),
     )
   )
 
