@@ -1,4 +1,4 @@
-# Typst-Poster
+# VNUHCM-Typst-Poster
 
 This is an academic poster template designed for [Typst](https://github.com/typst/typst). Supports both horizontal and vertical posters.
 
