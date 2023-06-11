@@ -67,4 +67,4 @@ This template is licensed under the [MIT License](https://github.com/linhduongtu
 - *If you want to learn how to create presentation slides, please refer to [my other repository](https://github.com/linhduongtuan/DTU-typst-presentation).*
 
 ### Acknowledgement
-- I modify my repository based on the reference from [this repository](https://github.com/pncnmnp/typst-poster).
+- I modify my repository based on the reference in [this repository](https://github.com/pncnmnp/typst-poster).
