@@ -4,7 +4,7 @@ This is an academic poster template designed for [Typst](https://github.com/typs
 
 # What does it look like?
 
-![Example of a horizotal poster](./images/readme_horizontal.png)
+![Example of a horizotal poster](./examples/example.pdf)
 
 # Getting Started
 
